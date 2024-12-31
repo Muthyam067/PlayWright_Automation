@@ -2,7 +2,14 @@
   "name": "playwrightwebelements",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test":"npx playwright test",
+    "testchrome":"npx playwright test --project=chromium --headed",
+    "testconfig":"npx playwright test --config=dummy.config.ts --headed",
+    "testenv":"npx cross-env NODE_ENV=test npx playwright test tests/19.env.spec.ts",
+    "test1":" npm  run testenv"
+
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
